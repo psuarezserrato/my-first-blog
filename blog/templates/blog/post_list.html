@@ -1,14 +1,16 @@
 <html>
     <head>
         <title>Twitter Bots Articles</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
       <!--  <h2><a href="">More thoughts</a></h2>
         <p> Even deeper ones.</p>-->
     </head>
     <body>
    <div>{% for post in posts %}
     <div>
-        <p>published: {{ post.published_date }}</p>
         <h1><a href="">{{ post.title }}</a></h1>
+        <p>published: {{ post.published_date }}</p>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endfor %}
